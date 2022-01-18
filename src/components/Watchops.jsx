@@ -4,7 +4,7 @@ function Watchops(props){
     return (
         <div className="parent">
             <div className={props.className}>
-            <img src={props.src} className = "watch-align"/>
+            <img src={props.src} className = "watch-align" alt="watch" />
             </div>
         </div>
     );
