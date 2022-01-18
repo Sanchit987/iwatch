@@ -2,7 +2,7 @@ import React from "react";
 
 function Item(props) {
     return (
-            <div className="menud-item">
+            <div className={props.className}>
                 {props.name}
             </div>
         );

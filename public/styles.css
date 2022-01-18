@@ -44,7 +44,9 @@
     width: 130px;
 }
 
-
+.selected-item {
+    background-color: #EFF6FB;
+}
 
 
 .mac {
@@ -329,6 +331,7 @@
     line-height: 27px;
     color: #ABC6D6;
 }
+
 .menu-items {
     height: 50%;
     padding-top: 30%;
@@ -336,8 +339,21 @@
     flex-direction: column;
     justify-content: center;
 }
-
+.watch-mobile-view {
+    display: flex;
+    flex-direction: row;
+}
 @media screen and (max-width: 690px) {
+
+.center {
+    width : 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
 .row {
     flex-direction: column-reverse;
 }
@@ -372,13 +388,16 @@
 }
 
 .watch-position {
-    position: absolute;
-    width: 275px;
-    height: 275px;
-    left: 50px;
-    top: 275px;
+    width: 90%;
+    height: auto;
 }
 
+.shadow {
+    width: 50%;
+    height: auto;
+    background: #ABC6D6;
+    filter: blur(25px);
+}
 .button {
     display: none;
 }
@@ -392,15 +411,14 @@
     height: 40px;
     width: 125px;
 }
+
 .buy-div {
-    padding-top: 10px;
+    padding-top: 10%;
 }
+
 .heading {
-    position: absolute;
     width: 340px;
-    height: 156px;
-    left: 30px;
-    top: 120px;
+    height: 100px;
     font-size: 26px;
     line-height: 30px;
 }
@@ -430,11 +448,21 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     width: 80%;
     height: 100vh;
     background-color: #FFFFFF;
 }
 
+.watch-mobile-view {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.colornavigator {
+    padding-top: 25%;
+}
 
 }

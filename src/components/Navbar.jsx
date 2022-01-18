@@ -25,23 +25,27 @@ function Navbar() {
             </div>
             <div className="center">
                 <div>
-                <div className = "heading">
-                    <p><b>The Perfect Moment</b><br /> Between Past And <br />Future</p>
+                    <div className = "heading">
+                        <p><b>The Perfect Moment</b><br /> Between Past And <br />Future</p>
+                    </div>
+                    <div className="buy-div">
+                        <Button name='Buy Now' className="buy-button"/>
+                    </div>
                 </div>
-                <div className="buy-div">
-                    <Button name='Buy Now' className="buy-button"/>
+                <div className="watch-mobile-view">
+                    <div className="alc">
+                        <Watch src={require('../assets/watch.png')}  className="watch-position" />
+                        <div className= "shadow"></div>
+                        <div className = "watchoption">
+                            <Watchops src={require('../assets/greyWatch.png')} className='greyback'/>
+                            <Watchops src={require('../assets/cyanWatch.png')} className='cyanback'/>
+                            <Watchops src={require('../assets/babyPink.png')} className='pinkback'/>
+                        </div>
+                    </div>
+                    <div>
+                        <Navigator />
+                    </div>
                 </div>
-                </div>
-                <div className="alc">
-                <Watch src={require('../assets/watch.png')}  className="watch-position" />
-                <div className= "shadow"></div>
-                <div className = "watchoption">
-                    <Watchops src={require('../assets/greyWatch.png')} className='greyback'/>
-                    <Watchops src={require('../assets/cyanWatch.png')} className='cyanback'/>
-                    <Watchops src={require('../assets/babyPink.png')} className='pinkback'/>
-                </div>
-                </div>
-                <Navigator />
             </div>
                 
             
